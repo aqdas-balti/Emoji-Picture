@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+div {
+  height: 100px;
+  width: 50px;
+  border: 2px solid black;
+}
+#container {
+  width: 700px;
+  height: 300px;
+  display: flex;
+  flex-direction: row; /*Row (Horizental) By Default the direction is in row all elements
+      are arranged from left to right in this the main axis is from
+      left to right and cross axis from top to bottom*/
+  flex-direction: row-reverse; /*Row (Horizental) In row reverse direction all elements
+      are arranged from right to left and the main axis is from
+      right to left and cross axis from top to right*/
+  flex-direction: column; /*Column (Vertical) in column direction the
+      elements are arreanged in from top to bottom and the main axis is
+      from top to bottom*/
+  flex-direction: column-reverse; /*Column (Vertical) in column reverse direction the
+      elements are arreanged in from bottom to top and the main axis is
+      from bottom to top*/
+  flex-direction: row;
+  justify-content: flex-start; /*The direction is from left to right but the 
+      main axis is from left to right*/
+  justify-content: flex-end; /*The direction is from right to left but the
+      main axis is from left to right*/
+  justify-content: center; /*The direction is from left to right in center
+      the main axis is from left to right*/
+  justify-content: space-around; /*The space b/w the boxes the first and
+      the last boxes of the content spaces are half of the 2nd box to onward
+      2nd last boxes spaces*/
+  justify-content: space-between; /*extra space remove from space around
+      1st and last box and remaining boxes are arranged in same difference spaces*/
+  justify-content: space-evenly; /*All the boxes are arranged with same space difference
+      b/w on another boxes*/
+  flex-direction: column;
+  justify-content: start;
+  justify-content: end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
+  /* flex-wrap: wrap;
+      /*align-items: center;/*All the elements are in center*/
+  /* align-content: center;/*All the content are in center and remaining spaces are 
+      move to top and bottom*/
+  /*align-content: flex-start;/*All content are move to star and space
+      collected from end*/
+  /*align-content: flex-end;/*All content are move to end and space
+      collected from top*/
+  /*align-items: flex-start;/*All items are move to star and space
+      generated and to control the space generated we use content flex star in next*/
+  /*align-content: flex-start;*/
+  /* align-items: center;
+      align-content: center;*/
+  /*align-items: flex-start;*/
+}
+
+#Box1 {
+  background-color: aqua;
+  flex-grow: 1;
+}
+#Box2 {
+  background-color: pink;
+  height: 200px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  /* align-self: flex-end;*/
+  /*flex: shrink 0.5;;/*It decrease(shrring) the size of the item in the container */
+  /* flex-grow: 2;/*Grow occupy the remaining spaces of in the container*/
+}
+#Box3 {
+  background-color: blueviolet;
+  height: 75px;
+  flex-grow: 2;
+}
+#Box4 {
+  background-color: blanchedalmond;
+  flex-shrink: 1;
+}
+#Box5 {
+  background-color: azure;
+  /*align-self: flex-end;*/
+}
